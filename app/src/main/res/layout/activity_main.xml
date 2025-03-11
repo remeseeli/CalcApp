@@ -7,38 +7,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/divBtn"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="352dp"
+        android:onClick="division"
+        android:text="/"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mulBtn"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="352dp"
+        android:onClick="multiplication"
+        android:text="*"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/inputBoxTwo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_width="284dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="36dp"
         android:ems="10"
         android:hint="Second number"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/inputBoxOne" />
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:id="@+id/resultText"
+        android:layout_width="256dp"
+        android:layout_height="64dp"
+        android:text="Welcome to the calculator!\nInput numbers to start."
+        android:textAlignment="center"
+        android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.72" />
 
     <EditText
         android:id="@+id/inputBoxOne"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="284dp"
+        android:layout_height="70dp"
         android:layout_marginTop="48dp"
         android:ems="10"
         android:hint="First number"
         android:inputType="text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/addBtn"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="256dp"
+        android:onClick="addition"
+        android:text="+"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/subBtn"
+        android:layout_width="72dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="256dp"
+        android:onClick="subtraction"
+        android:text="-"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.811"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
